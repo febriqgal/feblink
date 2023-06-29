@@ -60,7 +60,7 @@ export default function CardC() {
               {isLoading ? (
                 <div
                   key={i}
-                  className="relative w-full h-10 rounded-md bg-slate-600 group"
+                  className="relative w-full h-10 rounded-md shadow-xl bg-slate-600 group"
                 >
                   <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
                   <Skeleton
