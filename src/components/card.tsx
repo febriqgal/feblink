@@ -5,6 +5,8 @@ import Instagram from "../../public/instagram.svg";
 import Linkedin from "../../public/linkedin.svg";
 import Twitter from "../../public/twitter.svg";
 import Tiktok from "../../public/tiktok.svg";
+import Certification from "../../public/certification.svg";
+import Arrow from "../../public/arrow.svg";
 export default function CardC() {
   const sosmed = [
     {
@@ -12,6 +14,11 @@ export default function CardC() {
       href: "https://febriqgalpurnama.com/",
       icon: FpLogo,
       link: "febriqgalpurnama.com",
+    },
+    {
+      name: "My Certification ",
+      href: "https://www.febriqgalpurnama.com/certification",
+      icon: Certification,
     },
     {
       name: "Linkedin",
@@ -43,21 +50,10 @@ export default function CardC() {
           <a key={i} href={e.href} className="relative w-full h-10 group">
             <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
             <div className="relative flex items-center h-full px-2 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-md group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
-              <Image
-                className="fill-slate-800"
-                height={25}
-                src={e.icon}
-                alt="#"
-              />
+              <Image height={25} src={e.icon} alt="#" />
               <div className="flex items-center justify-between w-full ">
                 <h2 className="ml-2 font-medium">{e.name}</h2>
-                {e.link != null ? (
-                  <h1 className="px-2 py-1 text-[10px] font-normal rounded-md bg-[#0A4D68] text-slate-50">
-                    {e.link}
-                  </h1>
-                ) : (
-                  <></>
-                )}
+                <Image src={Arrow} alt="#" />
               </div>
             </div>
           </a>
