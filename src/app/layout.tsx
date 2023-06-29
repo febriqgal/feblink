@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import "animate.css";
 import { Providers } from "./providers";
 import Fp from "../../public/fp.svg";
 import Image from "next/image";
