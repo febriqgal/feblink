@@ -2,6 +2,7 @@ import CardC from "@/components/card";
 import FooterC from "@/components/footer";
 import Image from "next/image";
 import Febriqgal from "../../public/febriqgal.jpg";
+
 export const metadata = {
   title: "Linkfeb",
   description: "Finds everything created with one simple link",
@@ -20,6 +21,7 @@ export default function Home() {
         <h1 className="mt-4 text-xl font-bold">Febriqgal Purnama</h1>
         <h1 className="">Software Engineer</h1>
       </div>
+
       <CardC />
       <FooterC />
     </main>
