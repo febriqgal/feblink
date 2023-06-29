@@ -4,7 +4,7 @@ import Febriqgal from "../../public/febriqgal.jpg";
 import FooterC from "@/components/footer";
 import FpLogo from "../../public/fplogo.svg";
 export const metadata = {
-  title: "Linkfeb - Febriqgal Purnama",
+  title: "Linkfeb",
   description: "Finds everything created with one simple link",
 };
 
@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex-col items-center justify-center min-h-screen py-10 space-y-8 text-center lg:w-[500px] lg:mx-auto">
       <div>
         <Image
-          className="mx-auto rounded-full outline-2 outline-white outline-dashed outline-offset-4 "
+          className="mx-auto rounded-full outline-2 outline-white outline-dashed outline-offset-4"
           height={200}
           src={Febriqgal}
           alt="Febriqgal"
