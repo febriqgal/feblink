@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" className="text-slate-50 light">
       <body className={`${poppins.className} bg-[#0A4D68]`}>
         <Providers>
-          <nav className="bg-slate-50 text-[#0A4D68] text-center py-4 outline-2 outline-white outline-dashed outline-offset-4">
+          <nav className="bg-slate-50 text-[#0A4D68] shadow-xl text-center py-4 outline-2 outline-white outline-dashed outline-offset-4 fixed w-full">
             <div className="flex justify-center">
               <Image height={40} src={Fp} className="mr-2" alt="Linkfeb" />
               <div className="text-start">
