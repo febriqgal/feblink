@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="flex-col items-center justify-center min-h-screen py-28 space-y-8 text-center lg:w-[500px] lg:mx-auto">
+    <main className="flex-col items-center justify-center min-h-screen py-10 space-y-8 text-center lg:w-[500px] lg:mx-auto">
       <div>
         <Image
           className="mx-auto rounded-full outline-2 outline-white outline-dashed outline-offset-4"
