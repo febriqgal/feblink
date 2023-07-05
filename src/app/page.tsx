@@ -19,7 +19,7 @@ export default function Home() {
           alt="Febriqgal"
         />
         <h1 className="mt-4 text-xl font-bold">Febriqgal Purnama</h1>
-        <h1 className="">Software Engineer</h1>
+        <h1 className="font-light">Software Engineer</h1>
       </div>
 
       <CardC />

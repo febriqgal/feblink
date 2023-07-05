@@ -12,7 +12,7 @@ import { useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 export default function CardC() {
-  const sosmed = [
+  const sosmed: any = [
     {
       name: "Website",
       href: "https://febriqgalpurnama.com/",
@@ -54,16 +54,18 @@ export default function CardC() {
   return (
     <>
       <div className="container grid w-full grid-cols-1  gap-4 px-8 text-[#0A4D68]">
-        {sosmed.map((e, i) => {
+        {sosmed.map((e: any, i: string) => {
           return (
             <>
               {isLoading ? (
                 <div
                   key={i}
-                  className="relative w-full h-10 rounded-md shadow-xl bg-slate-600 group"
+                  className="relative w-full h-10 rounded-full shadow-xl group"
                 >
-                  <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
+                  <span className="absolute inset-0 border-2 border-dashed rounded-full border-slate-50" />
                   <Skeleton
+                    direction="ltr"
+                    borderRadius={100}
                     duration={3}
                     baseColor="#fff"
                     highlightColor="#64748b"
@@ -74,14 +76,14 @@ export default function CardC() {
                 <a
                   key={i}
                   href={e.href}
-                  className="relative w-full h-10 rounded-md bg-slate-600 group"
+                  className="relative w-full h-10 rounded-full group"
                 >
-                  <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
-                  <div className="relative flex items-center h-full px-2 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-md group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
+                  <span className="absolute inset-0 border-2 border-dashed rounded-full border-slate-50" />
+                  <div className="relative flex items-center h-full px-2 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-full group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
                     <Image height={25} src={e.icon} alt="#" />
                     <div className="flex items-center justify-between w-full ">
                       <h2 className="ml-2 font-medium">{e.name}</h2>
-                      <Image src={Arrow} alt="#" />
+                      <Image height={20} src={Arrow} alt="#" />
                     </div>
                   </div>
                 </a>
