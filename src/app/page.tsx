@@ -14,8 +14,8 @@ export default function Home() {
       <div>
         <Image
           loading="lazy"
-          className="mx-auto rounded-full outline-2 outline-white outline-dashed outline-offset-4"
-          height={200}
+          className="mx-auto rounded-full shadow-xl outline-2 outline-white outline-dashed outline-offset-4"
+          height={150}
           src={Febriqgal}
           alt="Febriqgal"
         />

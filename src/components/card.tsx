@@ -60,9 +60,9 @@ export default function CardC() {
               {isLoading ? (
                 <div
                   key={i}
-                  className="relative w-full h-10 rounded-full shadow-xl group"
+                  className="relative w-full h-10 rounded-md shadow-xl group"
                 >
-                  <span className="absolute inset-0 border-2 border-dashed rounded-full border-slate-50" />
+                  <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
                   <Skeleton
                     direction="ltr"
                     borderRadius={100}
@@ -77,10 +77,10 @@ export default function CardC() {
                   target="_blank"
                   key={i}
                   href={e.href}
-                  className="relative w-full h-10 rounded-full group"
+                  className="relative w-full h-10 rounded-md group"
                 >
-                  <span className="absolute inset-0 border-2 border-dashed rounded-full border-slate-50" />
-                  <div className="relative flex items-center h-full px-5 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-full group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
+                  <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
+                  <div className="relative flex items-center h-full px-5 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-md group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
                     <Image height={25} src={e.icon} alt="#" />
                     <div className="flex items-center justify-between w-full ">
                       <h2 className="ml-2 font-medium">{e.name}</h2>
