@@ -74,12 +74,13 @@ export default function CardC() {
                 </div>
               ) : (
                 <a
+                  target="_blank"
                   key={i}
                   href={e.href}
                   className="relative w-full h-10 rounded-full group"
                 >
                   <span className="absolute inset-0 border-2 border-dashed rounded-full border-slate-50" />
-                  <div className="relative flex items-center h-full px-2 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-full group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
+                  <div className="relative flex items-center h-full px-5 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-full group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
                     <Image height={25} src={e.icon} alt="#" />
                     <div className="flex items-center justify-between w-full ">
                       <h2 className="ml-2 font-medium">{e.name}</h2>

@@ -13,6 +13,7 @@ export default function Home() {
     <main className="flex-col items-center justify-center min-h-screen py-10 space-y-8 text-center lg:w-[500px] lg:mx-auto">
       <div>
         <Image
+          loading="lazy"
           className="mx-auto rounded-full outline-2 outline-white outline-dashed outline-offset-4"
           height={200}
           src={Febriqgal}
