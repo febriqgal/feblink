@@ -1,19 +1,17 @@
 "use client";
+import { Sosmed } from "@/type/sosmed";
 import Image from "next/image";
+import { useState } from "react";
+import "react-loading-skeleton/dist/skeleton.css";
+import Certification from "../../public/certification.svg";
 import FpLogo from "../../public/fp.svg";
 import Github from "../../public/github.svg";
 import Instagram from "../../public/instagram.svg";
 import Linkedin from "../../public/linkedin.svg";
-import Twitter from "../../public/twitter.svg";
 import Tiktok from "../../public/tiktok.svg";
-import Certification from "../../public/certification.svg";
-import Arrow from "../../public/arrow.svg";
-import { useState } from "react";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
-import { Sosmed } from "@/type/sosmed";
-import SkeletonC from "./skeleton";
+import Twitter from "../../public/twitter.svg";
 import { ArrowIcon } from "./icon/arrow";
+import SkeletonC from "./skeleton";
 
 export default function CardC() {
   const sosmed: Sosmed[] = [
@@ -75,11 +73,11 @@ export default function CardC() {
               className="relative w-full h-10 rounded-md group"
             >
               <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
-              <div className="relative flex items-center h-full px-2 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-md group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
+              <div className="relative flex items-center h-full px-2 text-[#0a4d68] transition-transform transform -translate-x-2 -translate-y-2 bg-white border-2 rounded-md shadow-xl group-hover:duration-200 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
                 <Image height={25} src={e.icon} alt="#" />
                 <div className="flex items-center justify-between w-full ">
                   <h2 className="ml-2 text-sm font-medium">{e.name}</h2>
-                  <ArrowIcon className="h-[20px]" />
+                  <ArrowIcon className="h-[20px] fill-[#0a4d68]" />
                 </div>
               </div>
             </a>

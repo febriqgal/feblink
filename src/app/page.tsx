@@ -1,3 +1,4 @@
+"use client";
 import CardC from "@/components/card";
 import FooterC from "@/components/footer";
 import ModalC from "@/components/modal";
@@ -5,18 +6,31 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Febriqgal from "../../public/febriqgal.jpg";
 import { Ig } from "@/components/icon";
+import { useEffect } from "react";
+
 export const metadata: Metadata = {
   title: "Link - Febriqgal Purnama",
   description: "Finds everything created with one simple link",
 };
 
 export default function Home() {
+  useEffect(() => {
+    const handleContextmenu = (e: any) => {
+      e.preventDefault();
+
+      console.log("sssssss");
+    };
+    document.addEventListener("contextmenu", handleContextmenu);
+    return function cleanup() {
+      document.removeEventListener("contextmenu", handleContextmenu);
+    };
+  }, []);
   return (
     <div className="flex-col items-center justify-center min-h-screen py-8 space-y-4 text-center lg:w-[500px] lg:mx-auto">
       <div>
         <Image
           loading="lazy"
-          className="mx-auto rounded-full shadow-xl outline-2 outline-white outline-dashed outline-offset-4"
+          className="mx-auto rounded-full shadow-2xl border-3"
           height={150}
           src={Febriqgal}
           alt="Febriqgal"
