@@ -6,7 +6,7 @@ export default function FooterC() {
     <footer className="flex flex-col items-center justify-center pt-4">
       <h1 className="text-xs font-light">From</h1>
       <Link target="_blank" href={"https://www.instagram.com/febproject_/"}>
-        <Image height={40} src={Fp} alt="#" />
+        <Image height={40} src={Fp} alt="##" />
       </Link>
     </footer>
   );
