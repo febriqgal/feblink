@@ -14,7 +14,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 export default function CardC() {
   const sosmed: any = [
     {
-      name: "Website",
+      name: "My Personal Website",
       href: "https://febriqgalpurnama.com/",
       icon: FpLogo,
       link: "febriqgalpurnama.com",
