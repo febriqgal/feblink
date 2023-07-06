@@ -1,11 +1,15 @@
 "use client";
 import { Snippet } from "@nextui-org/react";
+import React from "react";
 
-export default function SnippetC({ link }: { link: string }) {
+export default function SnippetC({
+  link,
+  className,
+}: { link: string } & React.ComponentPropsWithRef<"div">) {
   return (
     <Snippet
       size="xs"
-      className="text-[#0A4D68] bg-slate-50"
+      className={className}
       tooltipProps={{ className: "text-black", content: "Copy Link" }}
     >
       {link}

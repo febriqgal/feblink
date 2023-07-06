@@ -3,6 +3,7 @@ import FooterC from "@/components/footer";
 import ModalC from "@/components/modal";
 import Image from "next/image";
 import Febriqgal from "../../public/febriqgal.jpg";
+import Test from "@/components/test";
 export const metadata = {
   title: "Linkfeb",
   description: "Finds everything created with one simple link",
@@ -27,6 +28,7 @@ export default function Home() {
       </div>
       <CardC />
       <FooterC />
+      <Test className="text-red-300">Hello world</Test>
     </main>
   );
 }

@@ -30,7 +30,10 @@ export default function ModalC() {
             <>
               <ModalHeader className="text-black">Share Link</ModalHeader>
               <ModalBody>
-                <SnippetC link="https://link.febriqgalpurnama.com/" />
+                <SnippetC
+                  className="text-[#0A4D68]"
+                  link="https://link.febriqgalpurnama.com/"
+                />
               </ModalBody>
             </>
           )}
