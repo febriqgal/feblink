@@ -12,6 +12,8 @@ import { useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { Sosmed } from "@/type/sosmed";
+import SkeletonC from "./skeleton";
+import { ArrowIcon } from "./icon/arrow";
 
 export default function CardC() {
   const sosmed: Sosmed[] = [
@@ -51,45 +53,36 @@ export default function CardC() {
   setTimeout(() => {
     setLoading(false);
   }, 2000);
+  if (isLoading) {
+    return (
+      <div className="container grid w-full grid-cols-1 gap-4 px-8 text-[#0A4D68]">
+        <SkeletonC />
+        <SkeletonC />
+        <SkeletonC />
+        <SkeletonC />
+      </div>
+    );
+  }
   return (
     <>
       <div className="container grid w-full grid-cols-1 gap-4 px-8 text-[#0A4D68]">
         {sosmed.map((e: Sosmed, i: number) => {
           return (
-            <>
-              {isLoading ? (
-                <div
-                  key={i}
-                  className="relative w-full h-10 rounded-md shadow-xl group"
-                >
-                  <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
-                  <Skeleton
-                    direction="ltr"
-                    borderRadius={6}
-                    duration={3}
-                    baseColor="#fff"
-                    highlightColor="#64748b"
-                    className="relative flex items-center h-full px-2 transition-transform transform -translate-x-2 -translate-y-2 group-hover:duration-200 border-slate-10 group-hover:-translate-x-1 group-hover:-translate-y-1"
-                  ></Skeleton>
+            <a
+              target="_blank"
+              key={i}
+              href={e.href}
+              className="relative w-full h-10 rounded-md group"
+            >
+              <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
+              <div className="relative flex items-center h-full px-2 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-md group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
+                <Image height={25} src={e.icon} alt="#" />
+                <div className="flex items-center justify-between w-full ">
+                  <h2 className="ml-2 text-sm font-medium">{e.name}</h2>
+                  <ArrowIcon className="h-[20px]" />
                 </div>
-              ) : (
-                <a
-                  target="_blank"
-                  key={i}
-                  href={e.href}
-                  className="relative w-full h-10 rounded-md group"
-                >
-                  <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
-                  <div className="relative flex items-center h-full px-2 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-md group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
-                    <Image height={25} src={e.icon} alt="#" />
-                    <div className="flex items-center justify-between w-full ">
-                      <h2 className="ml-2 text-sm font-medium">{e.name}</h2>
-                      <Image height={16} src={Arrow} alt="#" />
-                    </div>
-                  </div>
-                </a>
-              )}
-            </>
+              </div>
+            </a>
           );
         })}
       </div>

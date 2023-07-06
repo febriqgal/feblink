@@ -4,6 +4,7 @@ import ModalC from "@/components/modal";
 import { Metadata } from "next";
 import Image from "next/image";
 import Febriqgal from "../../public/febriqgal.jpg";
+import { Ig } from "@/components/icon";
 export const metadata: Metadata = {
   title: "Link - Febriqgal Purnama",
   description: "Finds everything created with one simple link",
