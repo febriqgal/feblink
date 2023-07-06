@@ -1,8 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
-import Fp from "../../public/fp.svg";
-import Image from "next/image";
 const poppins = Poppins({
   subsets: ["latin", "devanagari", "latin-ext"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -17,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="text-slate-50 light scroll-smooth">
       <body className={`${poppins.className} bg-[#0A4D68]`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );

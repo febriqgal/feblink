@@ -1,5 +1,3 @@
-import React from "react";
-import CopyRigth from "../../public/copyright.svg";
 import Image from "next/image";
 import Fp from "../../public/logotrans.svg";
 export default function FooterC() {

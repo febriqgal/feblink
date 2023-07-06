@@ -11,16 +11,17 @@ import Arrow from "../../public/arrow.svg";
 import { useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import { Sosmed } from "@/type/sosmed";
+
 export default function CardC() {
-  const sosmed: any = [
+  const sosmed: Sosmed[] = [
     {
       name: "My Personal Website",
       href: "https://febriqgalpurnama.com/",
       icon: FpLogo,
-      link: "febriqgalpurnama.com",
     },
     {
-      name: "My Certification ",
+      name: "My Certification",
       href: "https://www.febriqgalpurnama.com/certification",
       icon: Certification,
     },
@@ -30,7 +31,6 @@ export default function CardC() {
       icon: Linkedin,
     },
     { name: "Github", href: "https://github.com/febriqgal", icon: Github },
-
     {
       name: "Instagram",
       href: "https://www.instagram.com/febriqgal_/",
@@ -54,7 +54,7 @@ export default function CardC() {
   return (
     <>
       <div className="container grid w-full grid-cols-1 gap-4 px-8 text-[#0A4D68]">
-        {sosmed.map((e: any, i: string) => {
+        {sosmed.map((e: Sosmed, i: number) => {
           return (
             <>
               {isLoading ? (

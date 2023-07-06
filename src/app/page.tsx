@@ -1,17 +1,17 @@
 import CardC from "@/components/card";
 import FooterC from "@/components/footer";
 import ModalC from "@/components/modal";
+import { Metadata } from "next";
 import Image from "next/image";
 import Febriqgal from "../../public/febriqgal.jpg";
-import Test from "@/components/test";
-export const metadata = {
-  title: "Linkfeb",
+export const metadata: Metadata = {
+  title: "Link - Febriqgal Purnama",
   description: "Finds everything created with one simple link",
 };
 
 export default function Home() {
   return (
-    <main className="flex-col items-center justify-center min-h-screen py-8 space-y-4 text-center lg:w-[500px] lg:mx-auto">
+    <div className="flex-col items-center justify-center min-h-screen py-8 space-y-4 text-center lg:w-[500px] lg:mx-auto">
       <div>
         <Image
           loading="lazy"
@@ -28,7 +28,6 @@ export default function Home() {
       </div>
       <CardC />
       <FooterC />
-      <Test className="text-red-300">Hello world</Test>
-    </main>
+    </div>
   );
 }

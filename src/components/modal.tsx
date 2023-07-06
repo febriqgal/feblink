@@ -8,7 +8,6 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import Share from "../../public/share.svg";
-
 import Image from "next/image";
 import { useState } from "react";
 import SnippetC from "./snippet";
