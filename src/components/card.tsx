@@ -53,7 +53,7 @@ export default function CardC() {
   }, 2000);
   return (
     <>
-      <div className="container grid w-full grid-cols-1  gap-4 px-8 text-[#0A4D68]">
+      <div className="container grid w-full grid-cols-1 gap-4 px-8 text-[#0A4D68]">
         {sosmed.map((e: any, i: string) => {
           return (
             <>
