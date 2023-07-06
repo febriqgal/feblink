@@ -80,11 +80,11 @@ export default function CardC() {
                   className="relative w-full h-10 rounded-md group"
                 >
                   <span className="absolute inset-0 border-2 border-dashed rounded-md border-slate-50" />
-                  <div className="relative flex items-center h-full px-4 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-md group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
+                  <div className="relative flex items-center h-full px-2 transition-transform transform -translate-x-2 -translate-y-2 border-2 rounded-md group-hover:duration-200 bg-slate-50 border-slate-50 backdrop-blur-lg group-hover:-translate-x-1 group-hover:-translate-y-1">
                     <Image height={25} src={e.icon} alt="#" />
                     <div className="flex items-center justify-between w-full ">
-                      <h2 className="ml-2 font-medium">{e.name}</h2>
-                      <Image height={20} src={Arrow} alt="#" />
+                      <h2 className="ml-2 text-sm font-medium">{e.name}</h2>
+                      <Image height={16} src={Arrow} alt="#" />
                     </div>
                   </div>
                 </a>

@@ -3,6 +3,7 @@ import {
   Modal,
   ModalBody,
   ModalContent,
+  ModalFooter,
   ModalHeader,
   Tooltip,
   useDisclosure,
@@ -34,6 +35,7 @@ export default function ModalC() {
                   link="https://link.febriqgalpurnama.com/"
                 />
               </ModalBody>
+              <ModalFooter></ModalFooter>
             </>
           )}
         </ModalContent>

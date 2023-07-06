@@ -10,7 +10,7 @@ export default function SnippetC({
     <Snippet
       size="xs"
       className={className}
-      tooltipProps={{ className: "text-black", content: "Copy Link" }}
+      tooltipProps={{ content: "Copy Link" }}
     >
       {link}
     </Snippet>
